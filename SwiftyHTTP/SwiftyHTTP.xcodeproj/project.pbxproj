@@ -37,14 +37,11 @@
 		C913CE032079950B007B3FDA /* URLEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913CE022079950B007B3FDA /* URLEncodingTests.swift */; };
 		C913CE042079950B007B3FDA /* URLEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913CE022079950B007B3FDA /* URLEncodingTests.swift */; };
 		C913CE052079950B007B3FDA /* URLEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913CE022079950B007B3FDA /* URLEncodingTests.swift */; };
-		C9CF22672074BCB300A51078 /* SwiftyHTTP_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF225E2074BCB300A51078 /* SwiftyHTTP_iOS.framework */; };
-		C9CF226C2074BCB300A51078 /* SwiftyHTTP_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF226B2074BCB300A51078 /* SwiftyHTTP_iOSTests.swift */; };
+		C9CF22672074BCB300A51078 /* SwiftyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF225E2074BCB300A51078 /* SwiftyHTTP.framework */; };
 		C9CF226E2074BCB300A51078 /* SwiftyHTTP_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CF22602074BCB300A51078 /* SwiftyHTTP_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9CF22832074BCDB00A51078 /* SwiftyHTTP_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF227A2074BCDB00A51078 /* SwiftyHTTP_macOS.framework */; };
-		C9CF22882074BCDB00A51078 /* SwiftyHTTP_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF22872074BCDB00A51078 /* SwiftyHTTP_macOSTests.swift */; };
+		C9CF22832074BCDB00A51078 /* SwiftyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF227A2074BCDB00A51078 /* SwiftyHTTP.framework */; };
 		C9CF228A2074BCDB00A51078 /* SwiftyHTTP_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CF227C2074BCDB00A51078 /* SwiftyHTTP_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9CF229F2074BD0D00A51078 /* SwiftyHTTP_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF22962074BD0D00A51078 /* SwiftyHTTP_tvOS.framework */; };
-		C9CF22A42074BD0D00A51078 /* SwiftyHTTP_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF22A32074BD0D00A51078 /* SwiftyHTTP_tvOSTests.swift */; };
+		C9CF229F2074BD0D00A51078 /* SwiftyHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CF22962074BD0D00A51078 /* SwiftyHTTP.framework */; };
 		C9CF22A62074BD0D00A51078 /* SwiftyHTTP_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CF22982074BD0D00A51078 /* SwiftyHTTP_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9CF22AF2074BF2E00A51078 /* SwiftyHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF22AE2074BF2E00A51078 /* SwiftyHTTP.swift */; };
 		C9CF22B02074BF2E00A51078 /* SwiftyHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF22AE2074BF2E00A51078 /* SwiftyHTTP.swift */; };
@@ -143,23 +140,20 @@
 		C913CDFA207994F5007B3FDA /* MultiPartContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartContentTests.swift; sourceTree = "<group>"; };
 		C913CDFE20799500007B3FDA /* SessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerTests.swift; sourceTree = "<group>"; };
 		C913CE022079950B007B3FDA /* URLEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodingTests.swift; sourceTree = "<group>"; };
-		C9CF225E2074BCB300A51078 /* SwiftyHTTP_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CF225E2074BCB300A51078 /* SwiftyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF22602074BCB300A51078 /* SwiftyHTTP_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyHTTP_iOS.h; sourceTree = "<group>"; };
 		C9CF22612074BCB300A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9CF22662074BCB300A51078 /* SwiftyHTTP iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyHTTP iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9CF226B2074BCB300A51078 /* SwiftyHTTP_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyHTTP_iOSTests.swift; sourceTree = "<group>"; };
 		C9CF226D2074BCB300A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9CF227A2074BCDB00A51078 /* SwiftyHTTP_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CF227A2074BCDB00A51078 /* SwiftyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF227C2074BCDB00A51078 /* SwiftyHTTP_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyHTTP_macOS.h; sourceTree = "<group>"; };
 		C9CF227D2074BCDB00A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9CF22822074BCDB00A51078 /* SwiftyHTTP macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyHTTP macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9CF22872074BCDB00A51078 /* SwiftyHTTP_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyHTTP_macOSTests.swift; sourceTree = "<group>"; };
 		C9CF22892074BCDB00A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9CF22962074BD0D00A51078 /* SwiftyHTTP_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CF22962074BD0D00A51078 /* SwiftyHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CF22982074BD0D00A51078 /* SwiftyHTTP_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyHTTP_tvOS.h; sourceTree = "<group>"; };
 		C9CF22992074BD0D00A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9CF229E2074BD0D00A51078 /* SwiftyHTTP tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyHTTP tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9CF22A32074BD0D00A51078 /* SwiftyHTTP_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyHTTP_tvOSTests.swift; sourceTree = "<group>"; };
 		C9CF22A52074BD0D00A51078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9CF22AE2074BF2E00A51078 /* SwiftyHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyHTTP.swift; sourceTree = "<group>"; };
 		C9CF22B22074C06E00A51078 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
@@ -185,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CF22672074BCB300A51078 /* SwiftyHTTP_iOS.framework in Frameworks */,
+				C9CF22672074BCB300A51078 /* SwiftyHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CF22832074BCDB00A51078 /* SwiftyHTTP_macOS.framework in Frameworks */,
+				C9CF22832074BCDB00A51078 /* SwiftyHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CF229F2074BD0D00A51078 /* SwiftyHTTP_tvOS.framework in Frameworks */,
+				C9CF229F2074BD0D00A51078 /* SwiftyHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,11 +234,11 @@
 		C9CF22402074BB7800A51078 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9CF225E2074BCB300A51078 /* SwiftyHTTP_iOS.framework */,
+				C9CF225E2074BCB300A51078 /* SwiftyHTTP.framework */,
 				C9CF22662074BCB300A51078 /* SwiftyHTTP iOSTests.xctest */,
-				C9CF227A2074BCDB00A51078 /* SwiftyHTTP_macOS.framework */,
+				C9CF227A2074BCDB00A51078 /* SwiftyHTTP.framework */,
 				C9CF22822074BCDB00A51078 /* SwiftyHTTP macOSTests.xctest */,
-				C9CF22962074BD0D00A51078 /* SwiftyHTTP_tvOS.framework */,
+				C9CF22962074BD0D00A51078 /* SwiftyHTTP.framework */,
 				C9CF229E2074BD0D00A51078 /* SwiftyHTTP tvOSTests.xctest */,
 			);
 			name = Products;
@@ -262,7 +256,6 @@
 		C9CF226A2074BCB300A51078 /* SwiftyHTTP iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9CF226B2074BCB300A51078 /* SwiftyHTTP_iOSTests.swift */,
 				C9CF226D2074BCB300A51078 /* Info.plist */,
 			);
 			path = "SwiftyHTTP iOSTests";
@@ -280,7 +273,6 @@
 		C9CF22862074BCDB00A51078 /* SwiftyHTTP macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9CF22872074BCDB00A51078 /* SwiftyHTTP_macOSTests.swift */,
 				C9CF22892074BCDB00A51078 /* Info.plist */,
 			);
 			path = "SwiftyHTTP macOSTests";
@@ -298,7 +290,6 @@
 		C9CF22A22074BD0D00A51078 /* SwiftyHTTP tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9CF22A32074BD0D00A51078 /* SwiftyHTTP_tvOSTests.swift */,
 				C9CF22A52074BD0D00A51078 /* Info.plist */,
 			);
 			path = "SwiftyHTTP tvOSTests";
@@ -383,7 +374,7 @@
 			);
 			name = "SwiftyHTTP iOS";
 			productName = "SwiftyHTTP iOS";
-			productReference = C9CF225E2074BCB300A51078 /* SwiftyHTTP_iOS.framework */;
+			productReference = C9CF225E2074BCB300A51078 /* SwiftyHTTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C9CF22652074BCB300A51078 /* SwiftyHTTP iOSTests */ = {
@@ -419,7 +410,7 @@
 			);
 			name = "SwiftyHTTP macOS";
 			productName = "SwiftyHTTP macOS";
-			productReference = C9CF227A2074BCDB00A51078 /* SwiftyHTTP_macOS.framework */;
+			productReference = C9CF227A2074BCDB00A51078 /* SwiftyHTTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C9CF22812074BCDB00A51078 /* SwiftyHTTP macOSTests */ = {
@@ -455,7 +446,7 @@
 			);
 			name = "SwiftyHTTP tvOS";
 			productName = "SwiftyHTTP tvOS";
-			productReference = C9CF22962074BD0D00A51078 /* SwiftyHTTP_tvOS.framework */;
+			productReference = C9CF22962074BD0D00A51078 /* SwiftyHTTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C9CF229D2074BD0D00A51078 /* SwiftyHTTP tvOSTests */ = {
@@ -606,7 +597,6 @@
 				C9F6CA9220799FFE00E5BD18 /* HTTPRequest.swift in Sources */,
 				C9F6CA9920799FFE00E5BD18 /* URLEncoding.swift in Sources */,
 				C9F6CA9520799FFE00E5BD18 /* HTTPError.swift in Sources */,
-				C9CF226C2074BCB300A51078 /* SwiftyHTTP_iOSTests.swift in Sources */,
 				C9F6CA9A20799FFE00E5BD18 /* DataStructure.swift in Sources */,
 				C913CDF3207994DA007B3FDA /* HTTPStatusTests.swift in Sources */,
 				C9F6CA9120799FFE00E5BD18 /* SwiftyHTTP.swift in Sources */,
@@ -651,7 +641,6 @@
 				C9F6CA9C20799FFF00E5BD18 /* HTTPRequest.swift in Sources */,
 				C9F6CAA320799FFF00E5BD18 /* URLEncoding.swift in Sources */,
 				C9F6CA9F20799FFF00E5BD18 /* HTTPError.swift in Sources */,
-				C9CF22882074BCDB00A51078 /* SwiftyHTTP_macOSTests.swift in Sources */,
 				C9F6CAA420799FFF00E5BD18 /* DataStructure.swift in Sources */,
 				C913CDF4207994DA007B3FDA /* HTTPStatusTests.swift in Sources */,
 				C9F6CA9B20799FFF00E5BD18 /* SwiftyHTTP.swift in Sources */,
@@ -696,7 +685,6 @@
 				C9F6CAA620799FFF00E5BD18 /* HTTPRequest.swift in Sources */,
 				C9F6CAAD20799FFF00E5BD18 /* URLEncoding.swift in Sources */,
 				C9F6CAA920799FFF00E5BD18 /* HTTPError.swift in Sources */,
-				C9CF22A42074BD0D00A51078 /* SwiftyHTTP_tvOSTests.swift in Sources */,
 				C9F6CAAE20799FFF00E5BD18 /* DataStructure.swift in Sources */,
 				C913CDF5207994DA007B3FDA /* HTTPStatusTests.swift in Sources */,
 				C9F6CAA520799FFF00E5BD18 /* SwiftyHTTP.swift in Sources */,
@@ -872,7 +860,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -899,7 +887,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -961,9 +949,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -990,9 +978,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1059,13 +1047,13 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -1087,12 +1075,12 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttsy.SwiftyHTTP-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftyHTTP;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};

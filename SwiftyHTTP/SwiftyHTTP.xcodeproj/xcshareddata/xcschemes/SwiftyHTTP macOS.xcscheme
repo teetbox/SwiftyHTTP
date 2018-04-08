@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C9CF22792074BCDB00A51078"
-               BuildableName = "SwiftyHTTP_macOS.framework"
+               BuildableName = "SwiftyHTTP.framework"
                BlueprintName = "SwiftyHTTP macOS"
                ReferencedContainer = "container:SwiftyHTTP.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -44,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9CF22792074BCDB00A51078"
-            BuildableName = "SwiftyHTTP_macOS.framework"
+            BuildableName = "SwiftyHTTP.framework"
             BlueprintName = "SwiftyHTTP macOS"
             ReferencedContainer = "container:SwiftyHTTP.xcodeproj">
          </BuildableReference>
@@ -66,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9CF22792074BCDB00A51078"
-            BuildableName = "SwiftyHTTP_macOS.framework"
+            BuildableName = "SwiftyHTTP.framework"
             BlueprintName = "SwiftyHTTP macOS"
             ReferencedContainer = "container:SwiftyHTTP.xcodeproj">
          </BuildableReference>
@@ -84,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9CF22792074BCDB00A51078"
-            BuildableName = "SwiftyHTTP_macOS.framework"
+            BuildableName = "SwiftyHTTP.framework"
             BlueprintName = "SwiftyHTTP macOS"
             ReferencedContainer = "container:SwiftyHTTP.xcodeproj">
          </BuildableReference>

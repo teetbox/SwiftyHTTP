@@ -94,74 +94,17 @@ extension SessionManager: URLSessionDelegate, URLSessionTaskDelegate, URLSession
     
     // URLSessionDelegate
     
-    func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
-        print("###### URLSessionDelegate - didBecomeInvalidWithError ######")
-        print(#function)
-    }
-    
-    /* Not ready for authentication
-     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-     print("###### URLSessionDelegate - didReceive, completionHandler ######")
-     print(#function)
-     }
-     */
-    
-//    @available(iOS 7.0, *)
-//    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
-//        print("###### URLSessionDelegate - session ######")
-//        print(#function)
-//    }
     
     // URLSessionTaskDelegate
     
-    @available(iOS 11.0, *)
-    func urlSession(_ session: URLSession, task: URLSessionTask, willBeginDelayedRequest request: URLRequest, completionHandler: @escaping (URLSession.DelayedRequestDisposition, URLRequest?) -> Void) {
-        print("###### URLSessionTaskDelegate - willBeginDelayedRequest, completionHandler ######")
-        print(#function)
-    }
-    
-    @available(iOS 11.0, *)
-    func urlSession(_ session: URLSession, taskIsWaitingForConnectivity task: URLSessionTask) {
-        print("###### URLSessionTaskDelegate - taskIsWaitingForConnectivity ######")
-        print(#function)
-    }
-    
-    func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
-        print("###### URLSessionTaskDelegate - willPerformHTTPRedirection, newRequest, completionHandler ######")
-        print(#function)
-    }
-    
-    /* Not ready for authentication
-     func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-     print("###### URLSessionTaskDelegate - didReceive, completionHandler ######")
-     print(#function)
-     }
-     */
-    
-    func urlSession(_ session: URLSession, task: URLSessionTask, needNewBodyStream completionHandler: @escaping (InputStream?) -> Void) {
-        print("###### URLSessionTaskDelegate - needNewBodyStream ######")
-        print(#function)
-    }
-    
     func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
-        print("###### URLSessionTaskDelegate - didSendBodyData, totalBytesSent, totalBytesExpectedToSend ######")
-        print(#function)
         if let fileTask = sessionTasks[task] {
             fileTask.progress?(bytesSent, totalBytesSent, totalBytesExpectedToSend)
         }
     }
     
-    /* No need
-     func urlSession(_ session: URLSession, task: URLSessionTask, didFinishCollecting metrics: URLSessionTaskMetrics) {
-     print("###### URLSessionTaskDelegate - didFinishCollecting ######")
-     print(#function)
-     }
-     */
-    
     // When download task completed, this function is called.
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
-        print("###### URLSessionTaskDelegate - didCompleteWithError ######")
-        print(#function)
         guard error != nil else { return }
         if let fileTask = sessionTasks[task] {
             fileTask.completed?(nil, HttpError.responseError(error!))
@@ -175,8 +118,6 @@ extension SessionManager: URLSessionDelegate, URLSessionTaskDelegate, URLSession
     
     // When upload task completed, this function is called.
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-        print("###### URLSessionDataDelegate - didReceive, completionHandler ######")
-        print(#function)
         if let httpURLResponse = response as? HTTPURLResponse {
             let statusCode = httpURLResponse.statusCode
             let httpStatus = HttpStatus(code: statusCode)
@@ -192,48 +133,18 @@ extension SessionManager: URLSessionDelegate, URLSessionTaskDelegate, URLSession
                     group.nextTask()
                 }
             }
-            print(httpURLResponse)
         }
     }
     
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome downloadTask: URLSessionDownloadTask) {
-        print("###### URLSessionDataDelegate - didBecome downloadTask ######")
-        print(#function)
-    }
-    
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome streamTask: URLSessionStreamTask) {
-        print("###### URLSessionDataDelegate - didBecome streamTask ######")
-        print(#function)
-    }
-    
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        print("###### URLSessionDataDelegate - didReceive data ######")
-        print(#function)
-    }
-    
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, willCacheResponse proposedResponse: CachedURLResponse, completionHandler: @escaping (CachedURLResponse?) -> Void) {
-        print("###### URLSessionDataDelegate - willCacheResponse, completionHandler ######")
-        print(#function)
-    }
-    
     // URLSessionDownloadDelegate
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didResumeAtOffset fileOffset: Int64, expectedTotalBytes: Int64) {
-        print("###### URLSessionDownloadDelegate - didResumeAtOffset, expectedTotalBytes ######")
-        print(#function)
-    }
-    
+
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        print("###### URLSessionDownloadDelegate - didWriteData, totalBytesWritten, totalBytesExpectedToWrite ######")
-        print(#function)
         if let fileTask = sessionTasks[downloadTask] {
             fileTask.progress?(bytesWritten, totalBytesWritten, totalBytesExpectedToWrite)
         }
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        print("###### URLSessionDownloadDelegate - didFinishDownloadingTo ######")
-        print(#function)
         if let fileTask = sessionTasks[downloadTask] {
             fileTask.completed?(location, nil)
             if let group = requestGroup[fileTask] {
