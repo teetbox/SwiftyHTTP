@@ -22,7 +22,7 @@ public enum HttpMethod: String {
     case delete = "DELETE"
 }
 
-public struct SwiftyHTTP {
+public struct HTTP {
     
     let base: String
     let config: SessionConfig

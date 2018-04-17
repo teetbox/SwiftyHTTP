@@ -16,7 +16,7 @@ extension SessionConfig: Equatable {
 
 class SwiftyHTTPTests: XCTestCase {
     
-    var sut: SwiftyHTTP!
+    var sut: HTTP!
     
     let fakeBase = "http://www.fake.com"
     let fakePath = "/fake/path"
@@ -24,7 +24,7 @@ class SwiftyHTTPTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        sut = SwiftyHTTP(base: fakeBase)
+        sut = HTTP(base: fakeBase)
         sut.isFake = true
     }
     
@@ -34,13 +34,13 @@ class SwiftyHTTPTests: XCTestCase {
     }
     
     func testInitWithConfig() {
-        sut = SwiftyHTTP(base: fakeBase, config: .standard)
+        sut = HTTP(base: fakeBase, config: .standard)
         XCTAssertEqual(sut.config, .standard)
         
-        sut = SwiftyHTTP(base: fakeBase, config: .ephemeral)
+        sut = HTTP(base: fakeBase, config: .ephemeral)
         XCTAssertEqual(sut.config, .ephemeral)
         
-        sut = SwiftyHTTP(base: fakePath, config: .background("background"))
+        sut = HTTP(base: fakePath, config: .background("background"))
         XCTAssertEqual(sut.config, .background("background"))
     }
     
