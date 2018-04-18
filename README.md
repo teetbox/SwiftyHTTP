@@ -25,6 +25,7 @@ let http = HTTP(base: "https://jsonplaceholder.typicode.com", config: .backgroun
 ```
 
 ### GET
+Simple GET
 ```swift
 http.get("/posts/1") { response in
     let json = response.json
@@ -36,7 +37,9 @@ http.get("/posts/1") { response in
     }
     */
 }
-
+```
+GET with params
+```swift
 http.get("/comments", params: ["postId": 1]) { response in
     let jsonArray = response.jsonArray
     /*
@@ -57,3 +60,16 @@ http.get("/comments", params: ["postId": 1]) { response in
      */
 }
 ``` 
+GET with headers
+```swift
+http.get("/path", headers: ["key": "value"]) { response in
+    // Response
+}
+```
+GET with params and headers
+```swift
+http.get("/path", params: ["key": "value"], headers: ["key": "value"]) { response in
+    // Response
+}
+```
+### POST
