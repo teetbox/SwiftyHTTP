@@ -126,3 +126,19 @@ http.delete("/path", params: ["key": "value"], headers: ["key": "value"]) { resp
     // Response
 }
 ```
+### UPLOAD
+
+### DOWNLOAD
+
+### DATA REQUEST
+
+### FILE REQUEST
+
+### GROUP REQUEST
+
+## Installation
+
+## Requirements
+
+## License
+SwiftyHTTP is released under MIT license.
