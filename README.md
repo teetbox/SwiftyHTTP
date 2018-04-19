@@ -49,15 +49,15 @@ http.get("/comments", params: ["postId": 1]) { response in
         "id": 1,
         "name": "id labore ex et quam laborum",
         "email": "Eliseo@gardner.biz"
-       },
-       {
-         "postId": 1,
-         "id": 2,
-         "name": "quo vero reiciendis velit similique earum",
-         "email": "Jayne_Kuhic@sydney.com"
-       }
-     ]
-     */
+      },
+      {
+        "postId": 1,
+        "id": 2,
+        "name": "quo vero reiciendis velit similique earum",
+        "email": "Jayne_Kuhic@sydney.com"
+      }
+    ]
+    */
 }
 ``` 
 GET with headers
@@ -75,6 +75,10 @@ http.get("/path", params: ["key": "value"], headers: ["key": "value"]) { respons
 ### POST
 ```swift
 http.post("/path") { response in 
+    // Response
+}
+
+http.post("/post", params: ["key": "value"]) { response in
     // Response
 }
 
