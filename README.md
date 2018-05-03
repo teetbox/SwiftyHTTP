@@ -11,7 +11,7 @@ A Swift RESTfull HTTP framework
 ## Examples
 For default URLSession:
 ```swift
-let http =  CEHTTP(base: "https://jsonplaceholder.typicode.com")
+let http = CEHTTP(base: "https://jsonplaceholder.typicode.com")
 ```
 
 For ephemeral URLSession:
