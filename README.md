@@ -11,17 +11,17 @@ A Swift RESTfull HTTP framework
 ## Examples
 For default URLSession:
 ```swift
-let http = CEHTTP(base: "https://jsonplaceholder.typicode.com")
+let http = HTTP(base: "https://jsonplaceholder.typicode.com")
 ```
 
 For ephemeral URLSession:
 ```swift
-let http = CEHTTP(base: "https://jsonplaceholder.typicode.com", config: .ephemeral)
+let http = HTTP(base: "https://jsonplaceholder.typicode.com", config: .ephemeral)
 ```
 
 For background URLSession:
 ```swift
-let http = CEHTTP(base: "https://jsonplaceholder.typicode.com", config: .background("backgroundId"))
+let http = HTTP(base: "https://jsonplaceholder.typicode.com", config: .background("backgroundId"))
 ```
 
 ### GET
