@@ -164,6 +164,7 @@ http.download(path, params: ["key": "value"], headers: ["key": "value"]) { respo
 ```
 ### DATA REQUEST
 Data request is another way to do GET, POST, PUT and DELETE HTTP request. Firstly, it returns a request, you could continue to do some configuration for it before send it, such as set authorization.
+
 Simple GET data request
 ```swift
 let request = http.dataRequest(path: "/path", method: .get)
@@ -182,6 +183,7 @@ request.go { response in
 ```
 ### FILE REQUEST
 File request is another way to do upload and download HTTP request. In its parameters, you could pass two closures, one is progress, the other is completed.
+
 Upload file request
 ```swift
 let path = "/path/to/upload"
@@ -212,6 +214,7 @@ request.go()
 ```
 ### GROUP REQUEST
 Group request is used for grouping file requests. It can run either sequential or concurrent.
+
 Sequential group
 ```swift
 let file = http.fileRequest(downloadPath: "/path1", completed: { _, _ in })
