@@ -1,3 +1,5 @@
+## This repository is not mantained，please see [teetbox/TeetHTTP](https://github.com/teetbox/TeetHTTP)
+
 # SwiftyHTTP
 A Swift RESTfull HTTP framework
 
